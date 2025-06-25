@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(145deg, #010314, #030712, #0f172a);
+      font-family: 'Inter', sans-serif;
+      color: #cbd5e1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      overflow: hidden;
+      animation: fadeIn 1.5s ease-out both;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(90deg, #2563eb, #0ea5e9, #2563eb);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s linear infinite;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      max-width: 600px;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 1s ease-out 0.5s both;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(30, 64, 175, 0.25);
+      animation: fadeUp 1s ease-out 1s both;
+    }
+
+    .contact-box h2 {
+      color: #60a5fa;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin: 4px 0;
+      color: #dbeafe;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .contact-box a:hover {
+      color: #93c5fd;
+    }
+
+    /* Animations */
+    @keyframes shine {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.97); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚀 Coming Soon</h1>
+  <p>We’re building something powerful behind the scenes. Stay tuned — you’ll hear from us soon.</p>
+
+  <div class="contact-box">
+    <h2>Contact Us</h2>
+    <a href="mailto:you@example.com">📧 meet@subchain.live</a><br>
+    <a href="https://instagram.com/yourhandle" target="_blank">📸 Instagram</a><br>
+    <a href="https://twitter.com/yourhandle" target="_blank">🐦 Twitter</a>
+  </div>
+
+</body>
+</html>
